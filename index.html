@@ -2,20 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Anu Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Anu | Portfolio</title>
+
+  <!-- PWA -->
   <link rel="manifest" href="manifest.json">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Anu</h1>
-  <p>B.Tech Student | AI & ML</p>
 
-  <h2>Projects</h2>
-  <ul>
-    <li>Music Recommendation Using Facial Recognition</li>
-    <li>Exploratory Data Analysis</li>
-  </ul>
+  <!-- HERO -->
+  <section class="hero">
+    <h1 data-aos="fade-down">Hi, I'm Anu</h1>
+    <p data-aos="fade-up">
+      B.Tech Student | AI & ML | Creative Developer
+    </p>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" data-aos="fade-right">
+    <h2>About Me</h2>
+    <p>
+      I am a B.Tech student with strong interest in Artificial Intelligence,
+      Machine Learning, Web Development and 3D Visualization.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" data-aos="fade-left">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Python</span>
+      <span>Machine Learning</span>
+      <span>HTML / CSS / JS</span>
+      <span>PWA</span>
+      <span>3D Visualization</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section">
+    <h2 data-aos="fade-up">Projects</h2>
+
+    <div class="projects">
+
+      <div class="project-card" data-aos="zoom-in">
+        <h3>Music Recommendation Using Facial Recognition</h3>
+        <p>
+          An intelligent system that detects facial expressions and recommends
+          music based on the user's mood.
+        </p>
+        <p><b>Tech:</b> Python, OpenCV, ML</p>
+      </div>
+
+      <div class="project-card" data-aos="zoom-in">
+        <h3>Portfolio Website as PWA</h3>
+        <p>
+          A responsive portfolio website converted into a Progressive Web App
+          with offline access and installability.
+        </p>
+        <p><b>Tech:</b> HTML, CSS, JavaScript, Service Workers</p>
+      </div>
+
+      <div class="project-card" data-aos="zoom-in">
+        <h3>3D Classroom Visualization</h3>
+        <p>
+          A 3D virtual classroom project created to visualize classroom layout
+          and objects in a three-dimensional environment.
+        </p>
+        <p><b>Tech:</b> Blender / Computer Graphics / Three.js</p>
+
+        <!-- 3D PROJECT DEMO -->
+        <!-- Replace classroom-demo.mp4 with your actual video -->
+        <video controls>
+          <source src="classroom-demo.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Email: your-email@example.com</p>
+  </section>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
 
   <script src="app.js"></script>
 </body>
 </html>
+
